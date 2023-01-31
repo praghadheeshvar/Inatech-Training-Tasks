@@ -1,0 +1,81 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function Validate() {
+            var fname = document.form1.Fname.value;
+            var lname = document.form1.Lname.value;
+            var gender = document.form1.gender.value;
+            var dob = document.form1.dob.value;
+            var mailid = document.form1.mail.value;
+            var role = document.form1.role.value;
+            var file = document.form1.myFile.value;
+            if (fname == "" && lname == "" && gender == "" && dob == "" && mailid == "" && role == "" && file == "") {
+                alert("Please fill everything");
+            }
+            else if (fname == "") {
+                alert("Please enter your First Name");
+            }
+            else if (lname == "") {
+                alert("Please enter your Last Name");
+            }
+            else if (gender == "") {
+                alert("Please enter your gender");
+            }
+            else if (dob == "") {
+                alert("Please enter your date of birth");
+            }
+            else if (mailid == "") {
+                alert("Please enter your Mail ID");
+            }
+            else if (role == "") {
+                alert("Please select your role");
+            }
+            else if (file == "") {
+                alert("Please upload your resume");
+            }
+            else {
+                alert("Thanks for your Response");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1><u>Job Application Form</u></h1>
+    <br />
+    <form name="form1">
+        <label for="Fname"><b>FirstName:</b></label>
+        <input type="text" id="Fname" name="Fname" placeholder="FirstName"><br /><br />
+        <label for="Lname"><b>LastName:</b></label>
+        <input type="text" id="Lname" name="Lname" placeholder="LastName"><br />
+        <p><b>Gender:</b></p>
+        <input type="radio" id="gender" name="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="Female">
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender" value="others">
+        <label for="gender">Others</label><br /><br />
+        <label for="dob"><b>Date of Birth:</b></label>
+        <input type="date" id="dob" name="dob" value="" min="1900-01-01" max="2023-12-31"><br /><br />
+        <label for="email"><b>E-Mail:</b></label>
+        <input type="email" id="mail" name="mail" value="" placeholder="MailID" /><br /><br />
+        <label for="role"><b>Select a Role:</b></label>
+        <select name="role" id="role">
+            <option value="" disabled selected>Select your option</option>
+            <option value="Development">Development</option>
+            <option value="Design">Design</option>
+            <option value="Delivery">Delivery</option>
+            <option value="Testing">Testing</option>
+            <option value="pmg">PMG</option>
+            <option value="cs">Customer Support</option>
+            <option value="finance">Finance</option>
+            <option value="hr">HR</option>
+        </select><br /><br />
+        <p><b>Upload your Resume:</b></p>
+        <input type="file" id="myFile" name="myFile"><br /><br />
+        <button onclick="Validate()">Submit</button>
+    </form>
+</body>
+</html>
