@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-3.4.1.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <style>
+      .format {
+         background-color: turquoise;
+
+      }
+
+      .format1 {
+         background-color: red;
+      }
+    </style>
+</head>
+<body class="container page-header">
+    <div class="jumbotron">
+        <table class="table">
+            <tr>
+                <th>SNO</th>
+                <th>Politicians</th>
+                <th>Party</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rahul Gandhi</td>
+                <td>INC</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Modi</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sarath Pawar</td>
+                <td>NCP</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Arvind Kejriwal</td>
+                <td>AAP</td>
+            </tr>
+        </table>
+        <h1>Striped Table</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>SNO</th>
+                <th>Politicians</th>
+                <th>Party</th>
+            </tr>
+            <tr class="danger">
+                <td>1</td>
+                <td>M.K.Stalin</td>
+                <td>DMK</td>
+            </tr>
+            <tr class="info">
+                <td>2</td>
+                <td>J.Jayalalitha</td>
+                <td>ADMK</td>
+            </tr>
+            <tr class="active">
+                <td>3</td>
+                <td>Seeman</td>
+                <td>NTK</td>
+            </tr>
+        </table>
+        <h1>Hover Table</h1>
+        <table class="table table-hover">
+            <tr>
+                <th>SNO</th>
+                <th>Politicians</th>
+                <th>Party</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Udhanidhi stalin</td>
+                <td>DMK</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sarath Kumar</td>
+                <td>TMC</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vijayakanth</td>
+                <td>DMDK</td>
+            </tr>
+        </table>
+        <h1>Bordered Table</h1>
+        <table class="table table-bordered">
+            <tr>
+                <th>SNO</th>
+                <th>Politicians</th>
+                <th>Party</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Udhanidhi stalin</td>
+                <td>DMK</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sarath Kumar</td>
+                <td>TMC</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vijayakanth</td>
+                <td>DMDK</td>
+            </tr>
+        </table>
+        <h1>Condensed Table</h1>
+        <table class="table table-condensed">
+            <tr>
+                <th>SNO</th>
+                <th>Politicians</th>
+                <th>Party</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>M.K.Stalin</td>
+                <td>DMK</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>J.Jayalalitha</td>
+                <td>ADMK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Seeman</td>
+                <td>NTK</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        $('td').hover(
+            function () {
+                $(this).addClass("format");
+            },
+            function () {
+                $(this).removeClass("format");
+            });
+        $('th').hover(
+            function () {
+                $(this).addClass("format1");
+            },
+            function () {
+                $(this).removeClass("format1");
+            });
+    </script>
+</body>
+</html>
